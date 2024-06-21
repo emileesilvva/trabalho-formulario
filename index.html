@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+   <div>
+    <h1 id="titulo">  Site da Informática</h1>
+    <p id="subtitulo">preencha as informações.</p>
+    <br>
+</div>
+
+<form>
+
+    <fieldset class="grupo">
+        <div class="campo">
+            <label for="nome"><strong>Nome</strong></label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+
+        <div class="campo">
+            <label for="sobrenome"><strong>Sobrenome ou Apelido</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
+        </div>
+    </fieldset> 
+
+    <div class="campo">
+        <label><strong>Qual o seu curso?</strong></label>
+        <label>
+            <input type="radio" name="devweb" value="Administração" checked>Administração
+        </label>
+        <label>
+            <input type="radio" name="devweb" value="Informática">Informática
+        </label>
+        <label>
+            <input type="radio" name="devweb" value="Massoterápia">Massoterapia
+        </label>
+        <label>
+            <input type="radio" name="devweb" value="Não cursa nada no momento" checked>Não cursa nada no momento
+        </label>
+        <label>
+            <input type="radio" name="devweb" value="Ja concluiu o curso" checked>Ja concluiu o curso
+        </label>
+    </div>
+
+    <div class="campo">
+        <label for="senioridade"><strong>Sua série</strong></label>
+        <select id="senioridade" required>
+          <option selected disabled value="">Selecione</option>
+          <option>1 ano</option>
+          <option>2 ano</option>
+          <option>3 ano</option>
+          <option>fazendo faculdade</option>
+          <option>concluiu os estudos</option>
+        </select>
+    </div>
+
+    <fieldset class="grupo">
+        <div id="check">
+            <label><strong>Selecione as tecnologias que tem interrese na area de Informática:</strong></label><br><br>
+            <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+            <label for="tecnologia1"> HTML</label>
+            <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+            <label for="tecnologia2"> CSS</label>
+            <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+            <label for="tecnologia3"> JavaScript</label>
+            <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+            <label for="tecnologia4"> PHP</label>
+            <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+            <label for="tecnologia5"> C#</label>
+            <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+            <label for="tecnologia6"> Python</label>
+            <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+            <label for="tecnologia7"> Java</label>
+        </div>
+    </fieldset>
+
+    <div class="campo">
+        <br>
+        <label for="experiencia"><strong>Conte por que você quer aprender sobre Informática: </strong></label>
+        <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+    </div>
+
+    <button class="botao" type="submit" onsubmit="" onclick="mensagem()">Enviar</button>            
+
+</form>
+<script>
+  function mensagem(){
+    alert("Formúlario enviado com sucesso!")
+}
+
+</script>
+
+</body>
+</html>
